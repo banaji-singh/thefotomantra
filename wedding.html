@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Photography - The Foto Mantra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="wedding.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">THE FOTO MANTRA</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="home.html#service">Service</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#contact">Contact</a>
+            <a href="home.html#work">Work</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Wedding Photography</h1>
+        <p>Capturing Your Special Moments Forever</p>
+    </header>
+
+    <section class="portfolio">
+        <h2>Our Wedding Portfolio</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="wedding/img1.png" alt="Wedding Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="wedding/img2.png" alt="Wedding Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="wedding/img3.png" alt="Wedding Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="wedding/img4.png" alt="Wedding Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="wedding/img5.png" alt="Wedding Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="wedding/img6.png" alt="Wedding Photo 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Our Wedding Packages</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Basic Package</h3>
+                <ul>
+                    <li>6 Hours Coverage</li>
+                    <li>200 Edited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>1 Photographer</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Premium Package</h3>
+                <ul>
+                    <li>12 Hours Coverage</li>
+                    <li>500 Edited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>2 Photographers</li>
+                    <li>Wedding Album</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Luxury Package</h3>
+                <ul>
+                    <li>Full Day Coverage</li>
+                    <li>Unlimited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>3 Photographers</li>
+                    <li>Premium Wedding Album</li>
+                    <li>Engagement Shoot</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Book Your Wedding Photography</h2>
+        <p>Contact us to discuss your special day</p>
+        <a href="home.html#contact" class="contact-btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Foto Mantra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+̥

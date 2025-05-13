@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maternity Photography - The Foto Mantra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="maternity.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">THE FOTO MANTRA</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="home.html#service">Service</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#contact">Contact</a>
+            <a href="home.html#work">Work</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Maternity Photography</h1>
+        <p>Celebrating the Beauty of Motherhood</p>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>Beautiful Beginnings</h2>
+            <p>Pregnancy is a magical journey that deserves to be captured beautifully. Our maternity photography sessions celebrate the grace and beauty of motherhood, creating timeless memories of this special time.</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Maternity Portfolio</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="maternity/img1.jpg" alt="Maternity Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="maternity/img2.jpg" alt="Maternity Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="maternity/img3.jpg" alt="Maternity Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="maternity/img4.jpg" alt="Maternity Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="maternity/img5.jpg" alt="Maternity Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="maternity/img6.jpg" alt="Maternity Photo 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Photography Packages</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Essential Package</h3>
+                <ul>
+                    <li>1 Hour Session</li>
+                    <li>1 Location</li>
+                    <li>25 Digital Photos</li>
+                    <li>Online Gallery</li>
+                    <li>2 Outfit Changes</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Premium Package</h3>
+                <ul>
+                    <li>2 Hour Session</li>
+                    <li>2 Locations</li>
+                    <li>50 Digital Photos</li>
+                    <li>Online Gallery</li>
+                    <li>3 Outfit Changes</li>
+                    <li>5 Printed Photos</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Luxury Package</h3>
+                <ul>
+                    <li>3 Hour Session</li>
+                    <li>Multiple Locations</li>
+                    <li>All Digital Photos</li>
+                    <li>Online Gallery</li>
+                    <li>Unlimited Outfit Changes</li>
+                    <li>Photo Album</li>
+                    <li>Hair & Makeup</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Our Approach</h2>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <h3>Comfortable Experience</h3>
+                <p>Creating a relaxed and enjoyable environment</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-camera"></i>
+                <h3>Artistic Vision</h3>
+                <p>Capturing the beauty of motherhood</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <h3>Professional Touch</h3>
+                <p>Expert guidance throughout the session</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Book Your Session</h2>
+        <p>Let's create beautiful memories of your pregnancy journey</p>
+        <a href="home.html#contact" class="contact-btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Foto Mantra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

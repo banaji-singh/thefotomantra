@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Wedding Photography - The Foto Mantra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="prewedding.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">THE FOTO MANTRA</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="home.html#service">Service</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#contact">Contact</a>
+            <a href="home.html#work">Work</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Pre-Wedding Photography</h1>
+        <p>Your Love Story Begins Here</p>
+    </header>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>Create Timeless Memories</h2>
+            <p>Pre-wedding photoshoots are more than just pictures - they're the first chapter of your love story captured in frames. Let us help you create beautiful memories that you'll cherish forever.</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Our Pre-Wedding Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="prewedding/img1.png" alt="Pre-Wedding Photo 1">
+            </div>
+            <div class="gallery-item">
+                <img src="prewedding/img2.png" alt="Pre-Wedding Photo 2">
+            </div>
+            <div class="gallery-item">
+                <img src="prewedding/img3.png" alt="Pre-Wedding Photo 3">
+            </div>
+            <div class="gallery-item">
+                <img src="prewedding/img4.png" alt="Pre-Wedding Photo 4">
+            </div>
+            <div class="gallery-item">
+                <img src="prewedding/img5.png" alt="Pre-Wedding Photo 5">
+            </div>
+            <div class="gallery-item">
+                <img src="prewedding/img6.png" alt="Pre-Wedding Photo 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="packages">
+        <h2>Pre-Wedding Packages</h2>
+        <div class="package-container">
+            <div class="package">
+                <h3>Essential Package</h3>
+                <ul>
+                    <li>4 Hours Shoot</li>
+                    <li>1 Location</li>
+                    <li>100 Edited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>2 Outfit Changes</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Premium Package</h3>
+                <ul>
+                    <li>8 Hours Shoot</li>
+                    <li>2 Locations</li>
+                    <li>200 Edited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>4 Outfit Changes</li>
+                    <li>Photo Album</li>
+                </ul>
+            </div>
+            <div class="package">
+                <h3>Luxury Package</h3>
+                <ul>
+                    <li>Full Day Shoot</li>
+                    <li>Multiple Locations</li>
+                    <li>300+ Edited Photos</li>
+                    <li>Online Gallery</li>
+                    <li>Unlimited Outfit Changes</li>
+                    <li>Premium Photo Album</li>
+                    <li>Cinematic Video</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-camera"></i>
+                <h3>Professional Equipment</h3>
+                <p>High-end cameras and lenses for the best quality</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-heart"></i>
+                <h3>Passionate Team</h3>
+                <p>Dedicated photographers who love their craft</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>Quick Delivery</h3>
+                <p>Fast turnaround time for your photos</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Book Your Pre-Wedding Shoot</h2>
+        <p>Let's create something beautiful together</p>
+        <a href="home.html#contact" class="contact-btn">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Foto Mantra. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
